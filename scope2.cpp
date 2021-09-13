@@ -23,7 +23,7 @@ public:
 std::vector<SomeClass> someFunc(int size, int inner_size){
     std::vector<SomeClass> result;
     for(int i = 0; i < size; i++){
-        SomeClass temp = new SomeClass(inner_size,i);
+        SomeClass temp = SomeClass(inner_size,i);
         result.push_back(temp);
         fprintf(stderr,"element %d created\n",i);
     }
